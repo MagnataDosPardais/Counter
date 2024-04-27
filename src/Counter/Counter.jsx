@@ -17,7 +17,7 @@ function Counter() {
 	function handleName(nn) {  setName(n => nn); }
 	function addSaved(n,v) {
 		n = n === "" ? "Save" : n;
-		setSaved(s => [...s, {id: s.length+1, name: n, value: v}]);
+		setSaved(s => [...s, {id: s.length+1, name: n, value: v, fav: false}]);
 		setName(n => "");
 	}
 	function moveSavedUp(i) {
